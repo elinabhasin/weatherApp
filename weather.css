@@ -176,18 +176,12 @@ top:48%;
 #time{
     position: absolute;
     color:black;
-    font-size: 20px;
-    right:6%;
+    font-size: 14px;
+    right:3%;
     top:10px;
     font-size:25px;
 }
-#ampm{
-    position: absolute;
-    color:black;
-    font-size: 21px;
-    right:3%;
-    top:12px;
-}
+
 #humidity{
     position: absolute;
     color:black;

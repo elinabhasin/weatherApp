@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     let currentTime = new Date();
     let hours = currentTime.getHours();
+	let mins=currentTime.getMinutes();
     console.log(hours);
 
     if (0 <= hours && hours < 12) {
@@ -10,7 +11,19 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         document.getElementById("greet").innerText = "Good Evening!";
     }
+function updateTime(){
+    if(hours==0){
+		document.getElementById("time").innerText="12:"+mins+" AM";
+	}else if(hours>=1 && hours<12){
+		document.getElementById("time").innerText="0"+hours+":"+mins+" AM";
+	}else if(hours==12){
+		document.getElementById("time").innerText="0"+hours%12+":"+mins+" PM";
+	}else{
+		document.getElementById("time").innerText="0"+hours%12+":"+mins+" PM";
+	}
 
+};
+updateTime();
     const options = {
         method: 'GET',
         headers: {
