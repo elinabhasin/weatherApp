@@ -1,6 +1,9 @@
 body{
     background-color: #333333;
-    width:viewport
+    width:100%;
+    height:100%;
+    
+    
 }
 .navbar{
     position: absolute;
@@ -10,14 +13,14 @@ body{
     top:0px;
     left:0px;
 }
-#citySearch{
+#city{
     position: relative;
     background-color:#FFFFFF;
     width:20%;
     height:30px;
     border-radius: 30px;
     text-align: center;
-    left:77%;
+    left:75%;
     top:19px;
 }
 
@@ -37,7 +40,6 @@ body{
     color:white;
     left:1%;
     bottom:0.01px;
-    /* font-family: 'Brush Script MT', cursive; */
     font-family: Garamond, serif;
  
 }
@@ -68,11 +70,21 @@ body{
     position: absolute;
     background-color: #CCCCCC;
     width:80%;
-    height:30%;
+    height:40%;
     border-radius: 25px;
     left:10%;
     top:35%;
 }
+.weather2{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:80%;
+    height:40%;
+    border-radius: 25px;
+    left:10%;
+    top:83%;
+}
+
 .qContainer{
     position: absolute;
     background-color: #333333;
@@ -92,4 +104,20 @@ body{
 }
 #author{
     align-self: flex-end;
+}
+#search{
+    position:absolute;
+    background-color: black ;
+    border:none;
+    left:96%;
+    top:26%;
+}
+#search svg{
+    fill:white;
+}
+
+#cityName{
+    text-align: center;
+    font-size: 32px;
+
 }

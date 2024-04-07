@@ -25,3 +25,10 @@ fetch('https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes?category=environmen
 	// document.getElementById('quote').innerText=response.quote;
 	// document.getElementById('author').innerText=response.author;
 });
+
+const cityInput=document.getElementById("citySearch");
+
+form.addEventListener("click", (e) => {
+    e.preventDefault(); 
+	document.getElementById("cityName").innerText=cityInput;
+});
