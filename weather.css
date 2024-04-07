@@ -69,19 +69,19 @@ body{
 .weather{
     position: absolute;
     background-color: #CCCCCC;
-    width:80%;
+    width:77%;
     height:40%;
     border-radius: 25px;
-    left:10%;
+    left:11.5%;
     top:35%;
 }
 .weather2{
     position: absolute;
     background-color: #CCCCCC;
-    width:80%;
+    width:77%;
     height:40%;
     border-radius: 25px;
-    left:10%;
+    left:11.5%;
     top:83%;
 }
 
@@ -117,7 +117,144 @@ body{
 }
 
 #cityName{
+    position: relative;
+    top:5px;
     text-align: center;
     font-size: 32px;
 
+}
+
+#temp{
+    position:absolute;
+    font-size:115px;
+    color:black;
+    left:16%;
+    top:28%;
+    font-weight: 500;
+    width:9%;
+    text-align: right;
+
+}
+#deg{
+position:absolute;
+font-size: 57px;
+font-weight: 600;
+left:25%;
+top:33%;
+}
+#cel{
+color:#333333;
+font-size:47px;
+position:absolute;
+left:25%;
+top:48%;
+}
+#feels{
+    position: absolute;
+    color:black;
+    font-size: 20px;
+    top:68%;
+    left:16%;
+   
+}
+#feelsLike{
+    position: absolute;
+    color:black;
+    font-size: 20px;
+    top:68%;
+    width:1.62%;
+    left:24.5%;
+    text-align:right;
+}
+#degcel{
+    position: absolute;
+    color:black;
+    font-size: 20px;
+    top:68%;
+    left:26%;
+}
+#time{
+    position: absolute;
+    color:black;
+    font-size: 20px;
+    right:6%;
+    top:10px;
+    font-size:25px;
+}
+#ampm{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    right:3%;
+    top:12px;
+}
+#humidity{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    right:35%;
+    top:50%;
+    font-weight:600;
+    
+}
+
+#wind{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    right:39%;
+    top:30%;
+    font-weight:600;
+}
+#aqi{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    right:39%;
+    top:70%;
+    font-weight:600;
+    width:5%;
+    text-align: left;
+    
+}
+#humidval{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    right:32%;
+    top:50%;
+    
+}
+
+#windval{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    right:35%;
+    top:30%;
+}
+#aqival{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    right:9%;
+    top:70%;
+    width:30%;
+    text-align: left;
+}
+#km{
+    position: absolute;
+    color:#333333;
+    font-size: 21px;
+    right:30%;
+    top:30%;
+    font-weight: bolder;
+}
+#percent{
+    position: absolute;
+    color:#333333;
+    font-size: 21px;
+    top:50%;
+    right:30%;
+    font-weight: bolder;
 }
