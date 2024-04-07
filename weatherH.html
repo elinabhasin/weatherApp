@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="weather.css">
-</head>
-<body>
-    <div class="navbar">
-        <!-- <form role="search">
-            <input id="city" placeholder="City, State, Country" type="search"/>
-            <button type="submit" id="submit">Submit</button>
-        </form> -->
-        <form class="d-flex" role="search">
-            <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
-        </form>
-        <div class="bar">
-            <a href="weather.html">
-                <button id="home">Weather</button>
-            </a>
-           
+    <head>
+        <link rel="stylesheet" href="weather.css"/>
+        <title>Weather App</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="navbar">
+            <input id="citySearch" placeholder="City, State, Country"/>
+            <div class="bar">
+                    <button id="weatherh">Weather</button>
+                
+            </div>
+            <h1 id="Title">Weather App</h1>
         </div>
-        <h1 id="Title">Weather App</h1>
-    </div>
-</body>
+        <h2 id="greet">Hello!</h2>
+        <div class="weather">
+            
+        </div>
+    
+
+
+
+        <script src="weather.js"></script>
+    </body>
 </html>

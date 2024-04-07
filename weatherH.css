@@ -1,6 +1,5 @@
 body{
     background-color: #333333;
-    width:viewport
 }
 .navbar{
     position: absolute;
@@ -42,10 +41,10 @@ body{
  
 }
 
-#home{
+#weatherh{
     position: absolute;
     top:6px;
-    font-size:26px;
+    font-size:30px;
     color:black;
     left:4px;
     background-color: #FFFFFF;
@@ -53,43 +52,5 @@ body{
     border-radius: 20px;
     font-family: Palatino,serif;
     font-weight: 560;
-}
-
-#greet{
-    font-size:30px;
-    color:white;
-    position:absolute;
-    top:10%;
-    left:15px;
-    font-family:serif;
-}
-
-.weather{
-    position: absolute;
-    background-color: #CCCCCC;
-    width:80%;
-    height:30%;
-    border-radius: 25px;
-    left:10%;
-    top:35%;
-}
-.qContainer{
-    position: absolute;
-    background-color: #333333;
-    width:60%;
-    height:10%;
-    left:18%;
-    top:23%;
-    position:absolute;
-    font-size:18px;
-    color:white;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-}
-#quote{
-   align-self: baseline;
-}
-#author{
-    align-self: flex-end;
+    display:inline;
 }
