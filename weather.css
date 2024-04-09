@@ -56,6 +56,30 @@ body{
     font-family: Palatino,serif;
     font-weight: 560;
 }
+#weatherbut{
+    position: absolute;
+    top:6px;
+    font-size:26px;
+    color:black;
+    left:17%;
+    background-color: #FFFFFF;
+    border-style: none;
+    border-radius: 20px;
+    font-family: Palatino,serif;
+    font-weight: 560;
+}
+#aqibut{
+    position: absolute;
+    top:6px;
+    font-size:25px;
+    color:black;
+    left:17%;
+    background-color: #FFFFFF;
+    border-style: none;
+    border-radius: 20px;
+    font-family: Palatino,serif;
+    font-weight: 560;
+}
 
 #greet{
     font-size:30px;
@@ -83,6 +107,15 @@ body{
     border-radius: 25px;
     left:11.5%;
     top:83%;
+}
+.weather1{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:77%;
+    height:40%;
+    border-radius: 25px;
+    left:11.5%;
+    top:106%;
 }
 
 .qContainer{
@@ -251,4 +284,13 @@ top:48%;
     top:50%;
     right:30%;
     font-weight: bolder;
+}
+
+#aqimg{
+    width:1164px;
+    height:655px;
+    border-radius:20px ;
+    position:absolute;
+    left:16%;
+    top:15%;
 }
