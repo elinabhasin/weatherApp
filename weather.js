@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	
 	};
 	updateTime();
-	setInterval(updateTime(), 60000);
 	
 		const options = {
 			method: 'GET',
@@ -131,6 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		updateCity();
 		getWeather(cityInput);
 		updateAQI(cityInput);
+		updateTime();
 	});
 	city.addEventListener("keypress", (e) => {
 		if (e.key === "Enter") {
@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			updateCity();
 			getWeather(cityInput);
 			updateAQI(cityInput);
+			updateTime();
 		}
 	});
 	getWeather("Delhi");
@@ -173,5 +174,26 @@ document.addEventListener("DOMContentLoaded", () => {
 				.catch(err => console.error(err));
 		
 	
+
+
+const opt = {
+	method: 'POST',
+	headers: {
+		'content-type': 'application/json',
+		'X-RapidAPI-Key': 'cedc0ee057msh8166079f341b2e1p1c60b3jsn82bd7e78b951',
+		'X-RapidAPI-Host': 'historical-moon-phase-api.p.rapidapi.com'
+	},
+	body: {
+		date: '2023-04-19',
+		hemisphere: 'NORTHERN'
+	}
+};
+
+fetch(`https://historical-moon-phase-api.p.rapidapi.com/moon/phase`, opt)
+				.then(response => response.json())
+				.then((response) => {
+					console.log(response);
+				})
+				.catch(err => console.error(err));
 	
-	})
+	});
