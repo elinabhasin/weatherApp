@@ -46,42 +46,31 @@ body{
 
 #home{
     position: absolute;
-    top:6px;
-    font-size:26px;
+    top:9.5px;
+    font-size:21px;
     color:black;
     left:4px;
     background-color:#FFFFFF;
     border-width:2px;
     border-radius: 20px 0px 0px 20px;
-    font-family:'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 560;
     border-left: #333333;
     border-top: #333333;
     border-bottom: #333333;
     width:16%;
 }
-#weatherbut{
-    position: absolute;
-    top:6px;
-    font-size:26px;
-    color:black;
-    left:17%;
-    background-color: #FFFFFF;
-    border-style: none;
-    border-radius: 20px;
-    font-family:'Times New Roman', Times, serif ;
-    font-weight: 560;
-}
+
 #aqibut{
     position: absolute;
-    top:6px;
-    font-size:25px;
+    top:9.7px;
+    font-size:21px;
     color:black;
-    left:17%;
+    left:18%;
     background-color: #FFFFFF;
     border-style: none;
     border-radius: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 560;
 }
 
@@ -132,15 +121,22 @@ body{
     position:absolute;
     font-size:18px;
     color:white;
-    display:flex;
-    justify-content: center;
-    text-align: center;
+
 }
 #quote{
-   align-self: baseline;
+   position:relative;
+   top:-40%;
+ 
+   text-align: center;
+   height:75%;
+   left:2%;
 }
 #author{
-    align-self: flex-end;
+    position:relative;
+   top:-63%;
+   left:5%;
+   
+   text-align: right;
 }
 #search{
     position:absolute;

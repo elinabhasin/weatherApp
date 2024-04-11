@@ -1,7 +1,7 @@
 body{
     background-color: #333333;
 }
-.navbar{
+.navbarh{
     position: absolute;
     background-color: black;
     width: 100%;
@@ -9,18 +9,19 @@ body{
     top:0px;
     left:0px;
 }
-#citySearch{
-    position: relative;
-    background-color:#FFFFFF;
-    width:20%;
-    height:30px;
-    border-radius: 30px;
-    text-align: center;
-    left:77%;
-    top:19px;
-}
+#citySearchh{
+        position: relative;
+        background-color:#FFFFFF;
+        width:20%;
+        height:30px;
+        border-radius: 30px;
+        text-align: center;
+        left:75%;
+        top:19px;
+    }
 
-.bar{
+
+.barh{
     position: absolute;
     background-color:#FFFFFF;
     width:30%;
@@ -30,7 +31,7 @@ body{
     top:10px;
 }
 
-#Title{
+#Titleh{
     position:absolute;
     font-size: 35px;
     color:white;
@@ -43,14 +44,39 @@ body{
 
 #weatherh{
     position: absolute;
-    top:6px;
-    font-size:30px;
+    top:10px;
+    font-size:21px;
     color:black;
     left:4px;
     background-color: #FFFFFF;
-    border-style: none;
-    border-radius: 20px;
-    font-family: Palatino,serif;
+    border-radius: 20px 0px 0px 20px;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 560;
     display:inline;
+    border-left: #333333;
+    border-top: #333333;
+    border-bottom: #333333;
+}
+#searchh{
+    position:absolute;
+    background-color: black ;
+    border:none;
+    left:96%;
+    top:26%;
+}
+#searchh svg{
+    fill:white;
+}
+#aqibuth{
+    position: absolute;
+    top:10.5px;
+    font-size:21px;
+    color:black;
+    left:20%;
+    background-color: #FFFFFF;
+    border-style: none;
+    border-radius: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    
 }
