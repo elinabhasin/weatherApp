@@ -251,7 +251,7 @@ body{
     top:5px;
     text-align: center;
     font-size: 32px;
-   
+    
 
 }
 #status{
@@ -368,4 +368,38 @@ body{
     left:8.5%;
     top:62%;
     font-weight:600;
+}
+#risk{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:3%;
+    top:13%;
+    font-weight:600;
+}
+#norisk{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:3%;
+    top:50%;
+    font-weight:600;
+}
+#riskstring{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    top:29%;
+    width:100%;
+    text-align: center;
+    height:20%;
+}
+#noriskstring{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    top:68%;
+    width:100%;
+    text-align: center;
+    height:20%;
 }

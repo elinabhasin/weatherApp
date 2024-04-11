@@ -57,21 +57,33 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (0 <= overAll && overAll <= 50) {
                     document.getElementById('aqistring').innerHTML = "GOOD";
                     document.getElementById('aqistring').style.color = "green";
+					document.getElementById('riskstring').innerHTML="Enjoy your usual outdoor activities.";
+					document.getElementById('noriskstring').innerHTML="Ideal air quality for outdoor activities";
                 } else if (51 <= overAll && overAll <= 100) {
                     document.getElementById('aqistring').innerHTML = "MODERATE";
                     document.getElementById('aqistring').style.color = "#FEBE10";
+					document.getElementById('riskstring').innerHTML="Consider reducing or rescheduling strenuous activities outdoors if you are experiencing symptoms.";
+					document.getElementById('noriskstring').innerHTML="No need to modify your usual outdoor activities unless you experience symptoms such as coughing and throat irritation.";
                 } else if (101 <= overAll && overAll <= 150) {
                     document.getElementById('aqistring').innerHTML = "UNHEALTHY FOR SENSITIVE GROUPS";
                     document.getElementById('aqistring').style.color = "orange";
+					document.getElementById('riskstring').innerHTML="Reduce or reschedule strenuous activities outdoors. Children and the elderly should also take it easy.";
+					document.getElementById('noriskstring').innerHTML="Consider reducing or rescheduling strenuous activities outdoors if you experience symptoms such as coughing and throat irritation.";
                 } else if (151 <= overAll && overAll <= 200) {
                     document.getElementById('aqistring').innerHTML = "UNHEALTHY";
                     document.getElementById('aqistring').style.color = "red";
+					document.getElementById('riskstring').innerHTML="Avoid strenuous outdoor activities.";
+					document.getElementById('noriskstring').innerHTML="Cut back or reschedule strenuous outdoor activities.";
                 } else if (201 <= overAll && overAll <= 300) {
                     document.getElementById('aqistring').innerHTML = "VERY UNHEALTHY";
                     document.getElementById('aqistring').style.color = "purple";
-                } else {
+					document.getElementById('riskstring').innerHTML="Avoid all outdoor physical activities.";
+					document.getElementById('noriskstring').innerHTML="Significantly cut back on outdoor physical activities.";
+                } else { 
                     document.getElementById('aqistring').innerHTML = "HAZARDOUS";
                     document.getElementById('aqistring').style.color = "maroon";
+					document.getElementById('riskstring').innerHTML="Avoid strenuous activities outdoors. Children and the elderly should also avoid outdoor physical exertion.";
+					document.getElementById('noriskstring').innerHTML="Reduce or reschedule strenuous activities outdoors, especially if you experience symptoms such as coughing and throat irritation.";
                 }
 
                 updateaqiparams(response);
