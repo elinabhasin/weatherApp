@@ -273,3 +273,99 @@ body{
     width:34%;
     text-align: left;
 }
+#coconc{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:2.5%;
+    top:25%;
+    font-weight:600;
+}
+#coaqi{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:2.5%;
+    top:45%;
+    font-weight:600;
+}
+#o3conc{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:28.5%;
+    top:25%;
+    font-weight:600;
+}
+#o3aqi{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:28.5%;
+    top:45%;
+    font-weight:600;
+}
+#no2conc{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:54.5%;
+    top:25%;
+    font-weight:600;
+}
+#no2aqi{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:54.5%;
+    top:45%;
+    font-weight:600;
+}
+#so2conc{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:80.5%;
+    top:25%;
+    font-weight:600;
+}
+#so2aqi{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:80.5%;
+    top:45%;
+    font-weight:600;
+}
+#pm25conc{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:8.5%;
+    top:33%;
+    font-weight:600;
+}
+#pm25aqi{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:8.5%;
+    top:62%;
+    font-weight:600;
+}
+#pm10conc{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:8.5%;
+    top:33%;
+    font-weight:600;
+}
+#pm10aqi{
+    position: absolute;
+    color:black;
+    font-size: 21px;
+    left:8.5%;
+    top:62%;
+    font-weight:600;
+}
