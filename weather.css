@@ -96,21 +96,18 @@ body{
     position: absolute;
     background-color: #CCCCCC;
     width:77%;
-    height:40%;
+    height:47%;
     border-radius: 25px;
     left:11.5%;
-    top:83%;
+    top:120%;
 }
-.weather1{
-    position: absolute;
-    background-color: #CCCCCC;
-    width:77%;
-    height:40%;
-    border-radius: 25px;
-    left:11.5%;
-    top:106%;
+#common{
+    position: relative;
+    top:-2%;
+    font-size: 25px;
+    width:100%;
+    text-align: center;
 }
-
 .qContainer{
     position: absolute;
     background-color: #333333;
@@ -286,11 +283,246 @@ top:48%;
     font-weight: bolder;
 }
 
-#aqimg{
-    width:1164px;
-    height:655px;
-    border-radius:20px ;
-    position:absolute;
-    left:16%;
-    top:15%;
+.parambox{
+    position: absolute;
+    display: flex;
+    background-color: #333333;
+    width:77%;
+    height:40%;
+    border-radius: 25px;
+    left:11.5%;
+    top:85%;
+    justify-content: space-between;
+}
+.headers{
+    display: flex;
+    height:11%;
+    justify-content: space-evenly;
+}
+.places{
+    display: flex;
+    position: absolute;
+    height:60%;
+    width:15%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:1%;
+}
+.tempbox{
+    display: flex;
+    height:60%;
+    width:9%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:14%;
+    top:32%;
+}
+.mintempbox{
+    display: flex;
+    height:60%;
+    width:9%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:38%;
+    top:32%;
+}
+.maxtempbox{
+    display: flex;
+    height:60%;
+    width:9%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:50%;
+    top:32%;
+}
+.feelbox{
+    display: flex;
+    height:60%;
+    width:10%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:24.5%;
+    top:32%;
+}
+.placewind{
+    display: flex;
+    height:60%;
+    width:10%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:63%;
+    top:32%;
+}
+.placerise{
+    display: flex;
+    height:60%;
+    width:10%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:75%;
+    top:32%;
+}
+.placeset{
+    display: flex;
+    height:60%;
+    width:10%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:87%;
+    top:32%;
+}
+#cloudPct{
+    background-color: #CCCCCC;
+    width:22%;
+    height:62%;
+    border-radius: 25px;
+    left:11.5%;
+    top:30%;
+}
+#cloudtitle{
+    position: relative;
+    color:black;
+    font-size: 26px;
+    left:29%;
+    top:-2%;
+
+}
+#cloudpct{
+    position: absolute;
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    left:9%;
+    top:30%;
+    width:4%;
+    font-weight:600;
+    
+}
+#minTemp{
+    background-color: #CCCCCC;
+    width:22%;
+    height:62%;
+    border-radius: 25px;
+    left:11.5%;
+    top:30%;
+}
+#mintemptitle{
+    position: relative;
+    color:black;
+    font-size: 26px;
+    left:29%;
+    top:-2%;
+
+}
+#mintempdeg{
+    position: relative;
+    color:black;
+    font-size: 23px;
+    left:52.5%;
+    top:8%;
+    font-weight:600;
+}
+#mintempval{
+    position: absolute;
+    color:black;
+    font-size: 30px;
+    text-align: right;
+    width:3.5%;
+    left:33.5%;
+    top:30%;
+
+    font-weight:600;
+}
+#Cel{
+    position: relative;
+    color:#333333;
+    font-size: 30px;
+    left:57.5%;
+    top:-6%;
+    font-weight:600;
+}
+#maxTemp{
+    background-color: #CCCCCC;
+    width:22%;
+    height:62%;
+    border-radius: 25px;
+    left:11.5%;
+    top:30%;
+}
+#maxtemptitle{
+    position: relative;
+    color:black;
+    font-size: 26px;
+    left:29%;
+    top:-2%;
+
+}
+#maxtempdeg{
+    position: absolute;
+    color:black;
+    font-size: 23px;
+    left:63.7%;
+    top:29.5%;
+    font-weight:600;
+}
+
+#maxtempval{
+    position: absolute;
+    color:black;
+    font-size: 30px;
+    left:59.5%;
+    top:29%;
+    font-weight:600;
+    text-align: right;
+    width:3.5%;
+    
+}
+#Celmax{
+    position: relative;
+    color:#333333;
+    font-size: 30px;
+    left:58%;
+    top:5.4%;
+    font-weight:600;
+}
+#windDeg{
+    background-color: #CCCCCC;
+    width:22%;
+    height:62%;
+    border-radius: 25px;
+    left:11.5%;
+    top:30%;
+}
+#winddegtitle{
+    position: relative;
+    color:black;
+    font-size: 26px;
+    left:26%;
+    top:-2%;
+
+}
+#winddeg{
+    position: absolute;
+    color:black;
+    font-size: 30px;
+    left:87%;
+    top:30%;
+    font-weight:600;
+    text-align: center;
+    width:5%;
 }
