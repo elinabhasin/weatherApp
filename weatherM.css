@@ -1,5 +1,5 @@
 body{
-    background-color: #333333;
+    background-color: #6d6b6b;
 }
 .navbarh{
     position: absolute;
@@ -8,6 +8,7 @@ body{
     height:75px;
     top:0px;
     left:0px;
+    overflow-x: hidden;
 }
 #citySearchh{
         position: relative;
@@ -19,7 +20,13 @@ body{
         left:75%;
         top:19px;
     }
-
+#moonguide{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    font-size:25px;
+    top:2%;
+}
 
 .barh{
     position: absolute;
@@ -29,17 +36,20 @@ body{
     border-radius: 20px;
     right:57%;
     top:14px;
+  
 }
 
 #Titleh{
-    position:relative;
+    position:absolute;
     font-size: 35px;
     color:white;
-    bottom:4%;
+    bottom:1%;
+    left:0.5%;
     /* font-family: 'Brush Script MT', cursive; */
     font-family: Garamond, serif;
     width:100%;
     text-align:left ;
+    text-overflow: clip;
    
  
 }
@@ -115,4 +125,197 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 560;
     
+}
+.weather{
+    position: absolute;
+    background-color: #b8b7b7;
+    width:50%;
+    height:80%;
+    /* border-radius: 40px 0px 0px 40px; */
+    left:4%;
+    top:22%;
+    overflow-y: auto;
+}
+#moontitle{
+    position: absolute;
+    width:99%;
+    text-align: center;
+    font-size: 27px;
+    top:13%;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#moondata1{
+    position: absolute;
+    font-size: 18.5px;
+    top:14%;
+    padding:0px 2% 0px;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+#moondata2{
+    position: absolute;
+    font-size: 18.5px;
+    top:30%;
+    padding:0px 2% 0px;
+}
+#moondata3{
+    position: absolute;
+    font-size: 18.5px;
+    top:47%;
+    padding:0px 2% 0px;
+}
+#moondata4{
+    position: absolute;
+    font-size: 18.5px;
+    top:68%;
+    padding:0px 2% 0px;
+}
+#moondata5{
+    position: absolute;
+    font-size: 18.5px;
+    top:90%;
+    padding:0px 2% 0px;
+}
+#newmoon{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:42%;
+    height:40%;
+    border-radius: 25px;
+    left:5%;
+    top:135%;
+}
+#newmoontitle{
+    position: absolute;
+    color:black;
+    width:100%;
+    font-size:22px;
+    text-align:center;
+}
+#waxcrescent{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:42%;
+    height:40%;
+    border-radius: 25px;
+    right:6%;
+    top:135%;
+}
+#waxcrescenttitle{
+    position: absolute;
+    color:black;
+    width:100%;
+    font-size:22px;
+    text-align:center;
+}
+#firstquarter{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:42%;
+    height:40%;
+    border-radius: 25px;
+    left:5%;
+    top:185.5%;
+}
+#firstquartertitle{
+    position: absolute;
+    color:black;
+    width:100%;
+    font-size:22px;
+    text-align:center;
+}
+#waxgibbous{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:42%;
+    height:40%;
+    border-radius: 25px;
+    right:6%;
+    top:185.5%;
+}
+#waxgibboustitle{
+    position: absolute;
+    color:black;
+    width:100%;
+    font-size:22px;
+    text-align:center;
+}
+#fullmoon{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:42%;
+    height:40%;
+    border-radius: 25px;
+    left:5%;
+    top:236%;
+}
+#fullmoontitle{
+    position: absolute;
+    color:black;
+    width:100%;
+    font-size:22px;
+    text-align:center;
+}
+#wangibbous{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:42%;
+    height:40%;
+    border-radius: 25px;
+    right:6%;
+    top:236%;
+}
+#wangibboustitle{
+    position: absolute;
+    color:black;
+    width:100%;
+    font-size:22px;
+    text-align:center;
+}
+#lastquarter{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:42%;
+    height:40%;
+    border-radius: 25px;
+    left:5%;
+    top:286.6%;
+}
+#lastquartertitle{
+    position: absolute;
+    color:black;
+    width:100%;
+    font-size:22px;
+    text-align:center;
+}
+#wancrescent{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:42%;
+    height:40%;
+    border-radius: 25px;
+    right:6%;
+    top:286.6%;
+}
+#wancrescenttitle{
+    position: absolute;
+    color:black;
+    width:100%;
+    font-size:22px;
+    text-align:center;
 }
