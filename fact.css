@@ -1,0 +1,209 @@
+body{
+    background-color: #D3D3D3;
+    overflow-x: hidden;
+}
+.navbar{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height:75px;
+    top:0px;
+    left:0px;
+}
+#city{
+    position: relative;
+    background-color:#FFFFFF;
+    width:20%;
+    height:30px;
+    border-radius: 30px;
+    text-align: center;
+    left:75%;
+    top:19px;
+}
+
+.bar{
+    position: absolute;
+    background-color:#FFFFFF;
+    width:30%;
+    height:50px;
+    border-radius: 20px;
+    left:15%;
+    top:10px;
+}
+
+#Title{
+    position:absolute;
+    font-size: 35px;
+    color:white;
+    left:1%;
+    bottom:0.01px;
+    font-family: Garamond, serif;
+ 
+}
+#facttitle{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    font-size:25px;
+    top:2%;
+}
+
+#factbox{
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top:15%;
+    
+}
+#fire{
+    width:100%;
+    height:120%;
+}
+#weatherh{
+    position: absolute;
+    top:8px;
+    font-size:19.5px;
+    color:black;
+    left:4.5px;
+    background-color: #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    display:inline;
+    border-left: #333333;
+    border-top: #333333;
+    border-bottom: #333333;
+    cursor:pointer;
+    height:69%;
+}
+#aqibuth{
+    position: absolute;
+    top:14px;
+    font-size:19.5px;
+    color:black;
+    left:19%;
+    cursor:pointer;
+    background-color: #FFFFFF;
+    border-style: none;
+    border-radius: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    
+}
+#impfact1{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:40%;
+    height:23%;
+    /* border-radius: 25px 0px 0px 25px; */
+    right:2%;
+    top:25%;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+}
+#impfact2{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:40%;
+    height:23%;
+    /* border-radius: 25px; */
+    right:2%;
+    top:50%;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+}
+#impfact3{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:40%;
+    height:23%;
+    /* border-radius: 25px; */
+    right:2%;
+    top:75%;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+}
+#impfact4{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:50%;
+    height:30%;
+    /* border-radius: 25px; */
+    left:4%;
+    top:114%;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+}
+#impfact5{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:50%;
+    height:30%;
+    /* border-radius: 25px; */
+    left:4%;
+    top:150%;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+}
+#impfact6{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:50%;
+    height:30%;
+    /* border-radius: 25px; */
+    left:4%;
+    top:187%;
+    border-style: solid;
+    border-color: #555;
+    border-width: 3px;
+}
+.factpage{
+    position: absolute;
+    background-color: #b8b7b7;
+    width:50%;
+    height:80%;
+    /* border-radius: 40px 0px 0px 40px; */
+    left:4%;
+    top:18%;
+    overflow-y: auto;
+    border-color: #737272;
+    border-width: 3px;
+    border-style: solid;
+}
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+#aqibut{
+    position: absolute;
+    top:8.5px;
+    height:64%;
+    font-size:19.8px;
+    color:black;
+    background-color: #FFFFFF;
+    left:4px;
+    border-width:2px;
+    border-radius: 20px 0px 0px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    border-left: #333333;
+    border-top: #333333;
+    border-bottom: #333333;
+    width:13%;
+}
