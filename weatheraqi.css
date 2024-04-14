@@ -62,15 +62,18 @@ body{
 }
 #weatherbut1{
     position: absolute;
-    top:10px;
-    font-size:21px;
+    top:8px;
+    font-size:19.5px;
     color:black;
-    left:18%;
+    left:3%;
+    height:63%;
     background-color: #FFFFFF;
-    border-style: none;
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 560;
+    border-left: #333333;
+    border-top: #333333;
+    border-bottom: #333333;
 }
 .weather1{
     position: absolute;
@@ -86,8 +89,48 @@ body{
     top:5px;
     text-align: center;
     font-size: 32px;
-
 }
+.dropdown button{
+        position: absolute;
+        top:4.5px;
+        font-size:19.5px;
+        color:black;
+        left:21%;
+        background-color: #FFFFFF;
+        border-style: none;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 560;
+        cursor: pointer;
+        height:79%;
+    }
+    .dropdown a{
+        color:black;
+        display:block;
+        text-decoration: none;
+        padding: 25px 10px 5px;
+        font-size: 19px;
+        font-weight: 600;
+        border-color:black;
+    
+    }
+    .dropdown .content{
+        position: absolute;
+        background-color: #FFFFFF;
+        left: 22%;
+        top:90%;
+        display:none;
+        z-index:2;
+    }
+    .dropdown:hover .content{
+        display:block;
+    }
+    .dropdown:hover .button{
+        background-color: #CCCCCC;
+    }
+    .dropdown a:hover{
+        background-color: #CCCCCC;
+    }
+
 #overallaqi{
     position: relative;
     top:8px;

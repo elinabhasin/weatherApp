@@ -46,8 +46,9 @@ body{
 
 #aqibut{
     position: absolute;
-    top:10px;
-    font-size:21px;
+    top:8.5px;
+    height:64%;
+    font-size:19.8px;
     color:black;
     background-color: #FFFFFF;
     left:4px;
@@ -62,8 +63,8 @@ body{
 }
 .dropdown button{
     position: absolute;
-    top:4px;
-    font-size:21px;
+    top:5.5px;
+    font-size:19.5px;
     color:black;
     left:15%;
     background-color: #FFFFFF;
