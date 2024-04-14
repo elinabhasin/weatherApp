@@ -1,150 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="weather.css"/>
-        <title>Weather App</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    </head>
-    <body>
-        <div class="navbar">
-            <input id="city" placeholder="City, State, Country"/>
-        
-                <button id="search" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                  </svg></button>
-           
-            <div class="bar">
-               <a href="weatherH.html">
-                <button id="home">Home  </button>
-               </a>
-                   
-                    <a href="weatheraqi.html">
-                        <button id="aqibut">AQI</button>
-                    </a>
-                   
-                
+
+<head>
+    <link rel="stylesheet" href="weather.css" />
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="navbar">
+        <input id="city" placeholder="City, State, Country" />
+
+        <button id="search" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg></button>
+
+        <div class="bar">
+            <img src="moon-and-stars.png" style="width:50px;height:50px;position: absolute;left:87%;"/>
+            <a href="weatheraqi.html">
+                <button id="aqibut">AQI </button>
+            </a>
+
+            <div class="dropdown">
+                <button>Learn More</button>
+                <div class="content">
+                    <a href="weatherM.html">Lunar Info</a>
+                    <a href="">Weather Facts</a>
+                </div>
             </div>
-            <h1 id="Title">Weather App</h1>
+
+
         </div>
-        <h2 id="greet">Hello!</h2>
-        <div class="qContainer">
-            <p id="quote">"There are no passengers on the spaceship Earth. We are all crew.</p>
-            <p id="author" >-Marshall Mcluhan</p>
+        <h1 id="Title">Weather App</h1>
+    </div>
+    <h2 id="greet">Hello!</h2>
+    <div class="qContainer">
+        <p id="quote">"There are no passengers on the spaceship Earth. We are all crew.</p>
+        <p id="author">-Marshall Mcluhan</p>
+    </div>
+    <div class="weather">
+        <div id="cityName">Delhi</div>
+        <span id="temp">28</span>
+        <span id="deg">°</span>
+        <span id="cel">C</span>
+        <span id="feels">REAL FEEL </span>
+        <span id="feelsLike">21</span>
+        <span id="degcel">°C</span>
+        <span id="time">00:00</span>
+        <span id="wind">WIND : </span>
+        <span id="windval">5690</span>
+        <span id="km">km/hr</span>
+        <hr style="color:rgb(68, 67, 67);width:40%; position:absolute; right:4%; top:35%;">
+        <span id="humidity">HUMIDITY : </span>
+        <span id="humidval">5690</span>
+        <span id="percent">%</span>
+        <hr style="color:rgb(68, 67, 67);width:40%; position:absolute; right:4%; top:55%;">
+        <div id="aqi">AQI : </div>
+        <div id="aqival">VERY UNHEALTHY</div>
+        <hr style="color:rgb(68, 67, 67);width:40%; position:absolute; right:4%; top:75%;">
+
+    </div>
+    <div class="parambox">
+        <div id="cloudPct">
+            <p id="cloudtitle">Cloud PCT</p>
+            <div id="cloudpct">100</div>
         </div>
-        <div class="weather">
-            <div id="cityName">Delhi</div>
-            <span id="temp">28</span>
-            <span id="deg">°</span>
-            <span id="cel">C</span>
-            <span id="feels">REAL FEEL </span>
-            <span id="feelsLike">21</span>
-            <span id="degcel">°C</span>
-            <span id="time">00:00</span>
-            <span id="wind">WIND : </span>
-            <span id="windval">5690</span>
-            <span id="km">km/hr</span>
-            <hr style="color:rgb(68, 67, 67);width:40%; position:absolute; right:4%; top:35%;">
-            <span id="humidity">HUMIDITY : </span>
-            <span id="humidval">5690</span>
-            <span id="percent">%</span>
-            <hr style="color:rgb(68, 67, 67);width:40%; position:absolute; right:4%; top:55%;">
-            <div id="aqi">AQI : </div>
-            <div id="aqival">VERY UNHEALTHY</div>
-            <hr style="color:rgb(68, 67, 67);width:40%; position:absolute; right:4%; top:75%;">
-             
+        <div id="minTemp">
+            <p id="mintemptitle">Min. Temp</p>
+            <div id="mintempdeg"> °</div>
+            <span id="mintempval">100</span>
+            <span id="Cel">C</span>
         </div>
-        <div class="parambox">
-            <div id="cloudPct">
-              <p id="cloudtitle">Cloud PCT</p>
-              <div id="cloudpct">100</div>
-            </div>
-            <div id="minTemp">
-              <p id="mintemptitle">Min. Temp</p>
-              <div id="mintempdeg"> °</div>
-              <span id="mintempval">100</span>
-              <span id="Cel">C</span>
-            </div>
-            <div id="maxTemp">
-              <p id="maxtemptitle">Max. Temp</p>
-              <div id="maxtempdeg">°</div>
-              <span id="maxtempval">100</span>
-              <span id="Celmax">C</span>
-            </div>
-            <div id="windDeg">
-              <p id="winddegtitle">Wind degrees</p>
-              <div id="winddeg"><span id="winddegval">100</span></div>
-            </div>
-          </div>
-          <div class="weather2">
-            <p id="common">Weather Of Common Places</p>
-            <div class="headers">
-                <p id="placeh" style="font-weight:600;">Place</p>
-                <p id="temph" style="font-weight:600;">Temp</p>
-                <p id="feelsh" style="font-weight:600;">Real Feel</p>
-                <p id="minh" style="font-weight:600;">Min. Temp</p>
-                <p id="maxh" style="font-weight:600;">Max. Temp</p>
-                <p id="windh" style="font-weight:600;">Wind Speed</p>
-                <p id="sunrise" style="font-weight:600;">Sunrise</p>
-                <p id="sunset" style="font-weight:600;">Sunset</p>
-            </div>
-            <div class="places">
-                <p id="Tokyo" style="font-weight:600;">Tokyo</p>
-                <p id="Shanghai" style="font-weight:600;">Shanghai</p>
-                <p id="NewYork" style="font-weight:600;">New York</p>
-                <p id="NewDelhi" style="font-weight:600;">New Delhi</p>
-                <p id="London" style="font-weight:600;">London</p>
-            </div>
-            <div class="tempbox">
-                <p id="Tokyotemp">28</p>
-                <p id="Shanghaitemp">30</p>
-                <p id="NewYorktemp">31</p>
-                <p id="NewDelhitemp">30</p>
-                <p id="Londontemp">16</p>
-            </div>
-            <div class="mintempbox">
-                <p id="minTokyotemp">28</p>
-                <p id="minShanghaitemp">30</p>
-                <p id="minNewYorktemp">31</p>
-                <p id="minNewDelhitemp">30</p>
-                <p id="minLondontemp">16</p>
-            </div>
-            <div class="maxtempbox">
-                <p id="maxTokyotemp">28</p>
-                <p id="maxShanghaitemp">30</p>
-                <p id="maxNewYorktemp">31</p>
-                <p id="maxNewDelhitemp">30</p>
-                <p id="maxLondontemp">16</p>
-            </div>
-            <div class="feelbox">
-                <p id="Tokyofeel">28</p>
-                <p id="Shanghaifeel">30</p>
-                <p id="NewYorkfeel">31</p>
-                <p id="NewDelhifeel">30</p>
-                <p id="Londonfeel">16</p>
-            </div>
-            <div class="placewind">
-                <p id="Tokyowind">28</p>
-                <p id="Shanghaiwind">30</p>
-                <p id="NewYorkwind">31</p>
-                <p id="NewDelhiwind">30</p>
-                <p id="Londonwind">16</p>
-            </div>
-            <div class="placerise">
-                <p id="Tokyorise">28</p>
-                <p id="Shanghairise">30</p>
-                <p id="NewYorkrise">31</p>
-                <p id="NewDelhirise">30</p>
-                <p id="Londonrise">16</p>
-            </div>
-            <div class="placeset">
-                <p id="Tokyoset">28</p>
-                <p id="Shanghaiset">30</p>
-                <p id="NewYorkset">31</p>
-                <p id="NewDelhiset">30</p>
-                <p id="Londonset">16</p>
-            </div>
-          </div>
-        <script src="weather.js"></script>
-    </body>
+        <div id="maxTemp">
+            <p id="maxtemptitle">Max. Temp</p>
+            <div id="maxtempdeg">°</div>
+            <span id="maxtempval">100</span>
+            <span id="Celmax">C</span>
+        </div>
+        <div id="windDeg">
+            <p id="winddegtitle">Wind degrees</p>
+            <div id="winddeg"><span id="winddegval">100</span></div>
+        </div>
+    </div>
+    <div class="weather2">
+        <p id="common">Weather Of Common Places</p>
+        <div class="headers">
+            <p id="placeh" style="font-weight:600;">Place</p>
+            <p id="temph" style="font-weight:600;">Temp</p>
+            <p id="feelsh" style="font-weight:600;">Real Feel</p>
+            <p id="minh" style="font-weight:600;">Min. Temp</p>
+            <p id="maxh" style="font-weight:600;">Max. Temp</p>
+            <p id="windh" style="font-weight:600;">Wind Speed</p>
+            <p id="sunrise" style="font-weight:600;">Sunrise</p>
+            <p id="sunset" style="font-weight:600;">Sunset</p>
+        </div>
+        <div class="places">
+            <p id="Tokyo" style="font-weight:600;">Tokyo</p>
+            <p id="Shanghai" style="font-weight:600;">Shanghai</p>
+            <p id="NewYork" style="font-weight:600;">New York</p>
+            <p id="NewDelhi" style="font-weight:600;">New Delhi</p>
+            <p id="London" style="font-weight:600;">London</p>
+        </div>
+        <div class="tempbox">
+            <p id="Tokyotemp">28</p>
+            <p id="Shanghaitemp">30</p>
+            <p id="NewYorktemp">31</p>
+            <p id="NewDelhitemp">30</p>
+            <p id="Londontemp">16</p>
+        </div>
+        <div class="mintempbox">
+            <p id="minTokyotemp">28</p>
+            <p id="minShanghaitemp">30</p>
+            <p id="minNewYorktemp">31</p>
+            <p id="minNewDelhitemp">30</p>
+            <p id="minLondontemp">16</p>
+        </div>
+        <div class="maxtempbox">
+            <p id="maxTokyotemp">28</p>
+            <p id="maxShanghaitemp">30</p>
+            <p id="maxNewYorktemp">31</p>
+            <p id="maxNewDelhitemp">30</p>
+            <p id="maxLondontemp">16</p>
+        </div>
+        <div class="feelbox">
+            <p id="Tokyofeel">28</p>
+            <p id="Shanghaifeel">30</p>
+            <p id="NewYorkfeel">31</p>
+            <p id="NewDelhifeel">30</p>
+            <p id="Londonfeel">16</p>
+        </div>
+        <div class="placewind">
+            <p id="Tokyowind">28</p>
+            <p id="Shanghaiwind">30</p>
+            <p id="NewYorkwind">31</p>
+            <p id="NewDelhiwind">30</p>
+            <p id="Londonwind">16</p>
+        </div>
+        <div class="placerise">
+            <p id="Tokyorise">28</p>
+            <p id="Shanghairise">30</p>
+            <p id="NewYorkrise">31</p>
+            <p id="NewDelhirise">30</p>
+            <p id="Londonrise">16</p>
+        </div>
+        <div class="placeset">
+            <p id="Tokyoset">28</p>
+            <p id="Shanghaiset">30</p>
+            <p id="NewYorkset">31</p>
+            <p id="NewDelhiset">30</p>
+            <p id="Londonset">16</p>
+        </div>
+    </div>
+    <div class="sunmoon">
+        <p id="suntitle">Sun And Moon</p>
+        <hr style="color:rgb(68, 67, 67);width:99%; right:2px; position:absolute; top:15%;">
+        <span id="sunpic"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                class="bi bi-sun" viewBox="0 0 16 16">
+                <path
+                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+            </svg></span>
+        <p id="sunrisetime">Sunrise : <span id="risestamp" style="color:black">00:00</span></p>
+        <hr style="color:rgb(68, 67, 67);width:30%; right:4.5%; position:absolute; top:36%;">
+        <p id="sunsettime">Sunset : <span id="setstamp" style="color:black">00:00</span></p>
+        <hr style="color:rgb(68, 67, 67);width:99%; right:2px; position:absolute; top:55%;">
+        <p id="moonphase">Phase : </p>
+        <p id="phasename">Waxing Crescent</p>
+        <hr style="color:rgb(68, 67, 67);width:30%; right:4.5%; position:absolute; top:77%;">
+        <img src="time.png" style="width:85px;height:85px;position:absolute;top:65%;left:5.8%;" />
+    </div>
+    <div class="lunarinfo">
+        <p id="suntitle">Lunar Info</p>
+        <hr style="color:rgb(68, 67, 67);width:99%; right:2px; position:absolute; top:15%;">
+        <p id="lunarAge">Lunar Age : </p>
+        <p id="lunarAgeval">4.223688271907589</p>
+        <p id="days">days</p>
+        <hr style="color:rgb(68, 67, 67);width:80%; right:9%; position:absolute; top:36%;">
+        <p id="lunarAgepercent">Lunar Age % : </p>
+        <p id="lunarpercent">0.14302757242734288</p>
+        <p id="percentage">%</p>
+        <hr style="color:rgb(68, 67, 67);width:80%; right:9%; position:absolute; top:56%;">
+        <p id="lunardist">Lunar Distance : </p>
+        <p id="lunardistval">59.50198547420857</p>
+        <p id="kmdist">km</p>
+        <hr style="color:rgb(68, 67, 67);width:80%; right:9%; position:absolute; top:76%;">
+    </div>
+    <script src="weather.js"></script>
+</body>
+
 </html>

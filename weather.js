@@ -84,6 +84,14 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then((response) => {
                 console.log(response);
+                const sunriseDate = new Date(response.sunrise * 1000);
+                const sunsetDate = new Date(response.sunset * 1000);
+
+                const sunriseTimeString = sunriseDate.toLocaleTimeString(); // Convert to local time string
+                const sunsetTimeString = sunsetDate.toLocaleTimeString(); // Convert to local time string
+
+                console.log("Sunrise time:", sunriseTimeString);
+                console.log("Sunset time:", sunsetTimeString);
                 temp.innerHTML = response.temp;
                 cloudpct.innerHTML = response.cloud_pct;
                 feelsLike.innerHTML = response.feels_like;
@@ -92,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 mintempval.innerHTML = response.min_temp;
                 maxtempval.innerHTML = response.max_temp;
                 winddegval.innerHTML = response.wind_degrees;
+                risestamp.innerHTML=sunriseTimeString;
+                setstamp.innerHTML=sunsetTimeString;
             })
             .catch(err => console.error(err));
     };
@@ -101,9 +111,19 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then((response) => {
                 console.log(response);
+
+                const sunriseDate = new Date(response.sunrise * 1000);
+                const sunsetDate = new Date(response.sunset * 1000);
+
+                const sunriseTimeString = sunriseDate.toLocaleTimeString(); // Convert to local time string
+                const sunsetTimeString = sunsetDate.toLocaleTimeString(); // Convert to local time string
+
+                console.log("Sunrise time:", sunriseTimeString);
+                console.log("Sunset time:", sunsetTimeString);
+
                 document.getElementById('Tokyotemp').innerHTML = response.temp;
-                document.getElementById('Tokyorise').innerHTML = response.sunrise;
-                document.getElementById('Tokyoset').innerHTML = response.sunset;
+                document.getElementById('Tokyorise').innerHTML = sunriseTimeString;
+                document.getElementById('Tokyoset').innerHTML = sunsetTimeString;
                 document.getElementById("Tokyofeel").innerHTML = response.feels_like;
                 document.getElementById("Tokyowind").innerHTML = response.wind_speed;
                 document.getElementById("minTokyotemp").innerHTML = response.min_temp;
@@ -114,10 +134,17 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then((response) => {
                 console.log(response);
+                const sunriseDate = new Date(response.sunrise * 1000);
+                const sunsetDate = new Date(response.sunset * 1000);
 
+                const sunriseTimeString = sunriseDate.toLocaleTimeString(); // Convert to local time string
+                const sunsetTimeString = sunsetDate.toLocaleTimeString(); // Convert to local time string
+
+                console.log("Sunrise time:", sunriseTimeString);
+                console.log("Sunset time:", sunsetTimeString);
                 document.getElementById('Shanghaitemp').innerHTML = response.temp;
-                document.getElementById('Shanghairise').innerHTML = response.sunrise;
-                document.getElementById('Shanghaiset').innerHTML = response.sunset;
+                document.getElementById('Shanghairise').innerHTML = sunriseTimeString;
+                document.getElementById('Shanghaiset').innerHTML = sunsetTimeString;
                 document.getElementById("Shanghaifeel").innerHTML = response.feels_like;
                 document.getElementById("Shanghaiwind").innerHTML = response.wind_speed;
                 document.getElementById("minShanghaitemp").innerHTML = response.min_temp;
@@ -128,10 +155,18 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then((response) => {
                 console.log(response);
+                console.log(response);
+                const sunriseDate = new Date(response.sunrise * 1000);
+                const sunsetDate = new Date(response.sunset * 1000);
 
+                const sunriseTimeString = sunriseDate.toLocaleTimeString(); // Convert to local time string
+                const sunsetTimeString = sunsetDate.toLocaleTimeString(); // Convert to local time string
+
+                console.log("Sunrise time:", sunriseTimeString);
+                console.log("Sunset time:", sunsetTimeString);
                 document.getElementById('Londontemp').innerHTML = response.temp;
-                document.getElementById('Londonrise').innerHTML = response.sunrise;
-                document.getElementById('Londonset').innerHTML = response.sunset;
+                document.getElementById('Londonrise').innerHTML = sunriseTimeString;
+                document.getElementById('Londonset').innerHTML = sunsetTimeString;
                 document.getElementById("Londonfeel").innerHTML = response.feels_like;
                 document.getElementById("Londonwind").innerHTML = response.wind_speed;
                 document.getElementById("minLondontemp").innerHTML = response.min_temp;
@@ -142,10 +177,17 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then((response) => {
                 console.log(response);
+                const sunriseDate = new Date(response.sunrise * 1000);
+                const sunsetDate = new Date(response.sunset * 1000);
 
+                const sunriseTimeString = sunriseDate.toLocaleTimeString(); // Convert to local time string
+                const sunsetTimeString = sunsetDate.toLocaleTimeString(); // Convert to local time string
+
+                console.log("Sunrise time:", sunriseTimeString);
+                console.log("Sunset time:", sunsetTimeString);
                 document.getElementById('NewDelhitemp').innerHTML = response.temp;
-                document.getElementById('NewDelhirise').innerHTML = response.sunrise;
-                document.getElementById('NewDelhiset').innerHTML = response.sunset;
+                document.getElementById('NewDelhirise').innerHTML = sunriseTimeString;
+                document.getElementById('NewDelhiset').innerHTML = sunsetTimeString;
                 document.getElementById("NewDelhifeel").innerHTML = response.feels_like;
                 document.getElementById("NewDelhiwind").innerHTML = response.wind_speed;
                 document.getElementById("minNewDelhitemp").innerHTML = response.min_temp;
@@ -156,10 +198,17 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then((response) => {
                 console.log(response);
+                const sunriseDate = new Date(response.sunrise * 1000);
+                const sunsetDate = new Date(response.sunset * 1000);
 
+                const sunriseTimeString = sunriseDate.toLocaleTimeString(); // Convert to local time string
+                const sunsetTimeString = sunsetDate.toLocaleTimeString(); // Convert to local time string
+
+                console.log("Sunrise time:", sunriseTimeString);
+                console.log("Sunset time:", sunsetTimeString);
                 document.getElementById('NewYorktemp').innerHTML = response.temp;
-                document.getElementById('NewYorkrise').innerHTML = response.sunrise;
-                document.getElementById('NewYorkset').innerHTML = response.sunset;
+                document.getElementById('NewYorkrise').innerHTML = sunriseTimeString;
+                document.getElementById('NewYorkset').innerHTML = sunsetTimeString;
                 document.getElementById("NewYorkfeel").innerHTML = response.feels_like;
                 document.getElementById("NewYorkwind").innerHTML = response.wind_speed;
                 document.getElementById("minNewYorktemp").innerHTML = response.min_temp;
@@ -167,6 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(err => console.error(err));
     };
+
     updatetable();
     const Options = {
         method: 'GET',

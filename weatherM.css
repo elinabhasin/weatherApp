@@ -27,24 +27,26 @@ body{
     width:30%;
     height:50px;
     border-radius: 20px;
-    left:15%;
-    top:10px;
+    right:57%;
+    top:14px;
 }
 
 #Titleh{
-    position:absolute;
+    position:relative;
     font-size: 35px;
     color:white;
-    left:1%;
-    bottom:0.01px;
+    bottom:4%;
     /* font-family: 'Brush Script MT', cursive; */
     font-family: Garamond, serif;
+    width:100%;
+    text-align:left ;
+   
  
 }
 
 #weatherh{
     position: absolute;
-    top:10px;
+    top:6px;
     font-size:21px;
     color:black;
     left:4px;
@@ -56,23 +58,57 @@ body{
     border-left: #333333;
     border-top: #333333;
     border-bottom: #333333;
+    cursor:pointer;
+    height:74%;
 }
-#searchh{
-    position:absolute;
-    background-color: black ;
-    border:none;
-    left:96%;
-    top:26%;
+.dropdown button{
+    position: absolute;
+    top:7px;
+    font-size:21px;
+    color:black;
+    left:32%;
+    background-color: #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    cursor: pointer;
+    height:72%;
+    border-right: #333333;
+    border-top: #333333;
+    border-bottom: #333333;
 }
-#searchh svg{
-    fill:white;
+.dropdown a{
+    color:black;
+    display:block;
+    text-decoration: none;
+    padding: 25px 10px 5px;
+    font-size: 19px;
+    font-weight: 600;
+    border-color:black;
+
+}
+.dropdown .content{
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 33%;
+    top:90%;
+    display:none;
+}
+.dropdown:hover .content{
+    display:block;
+}
+.dropdown:hover .button{
+    background-color: #CCCCCC;
+}
+.dropdown a:hover{
+    background-color: #CCCCCC;
 }
 #aqibuth{
     position: absolute;
     top:10.5px;
     font-size:21px;
     color:black;
-    left:20%;
+    left:21%;
+    cursor:pointer;
     background-color: #FFFFFF;
     border-style: none;
     border-radius: 20px;

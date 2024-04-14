@@ -44,13 +44,13 @@ body{
  
 }
 
-#home{
+#aqibut{
     position: absolute;
     top:10px;
     font-size:21px;
     color:black;
+    background-color: #FFFFFF;
     left:4px;
-    background-color:#FFFFFF;
     border-width:2px;
     border-radius: 20px 0px 0px 20px;
     font-family:Arial, Helvetica, sans-serif;
@@ -58,22 +58,47 @@ body{
     border-left: #333333;
     border-top: #333333;
     border-bottom: #333333;
-    width:16%;
+    width:13%;
 }
-
-#aqibut{
+.dropdown button{
     position: absolute;
-    top:9.7px;
+    top:4px;
     font-size:21px;
     color:black;
-    left:18%;
+    left:15%;
     background-color: #FFFFFF;
     border-style: none;
-    border-radius: 20px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 560;
+    cursor: pointer;
+    height:79%;
 }
+.dropdown a{
+    color:black;
+    display:block;
+    text-decoration: none;
+    padding: 25px 10px 5px;
+    font-size: 19px;
+    font-weight: 600;
+    border-color:black;
 
+}
+.dropdown .content{
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 14%;
+    top:90%;
+    display:none;
+}
+.dropdown:hover .content{
+    display:block;
+}
+.dropdown:hover .button{
+    background-color: #CCCCCC;
+}
+.dropdown a:hover{
+    background-color: #CCCCCC;
+}
 #greet{
     font-size:30px;
     color:white;
@@ -91,6 +116,108 @@ body{
     border-radius: 25px;
     left:11.5%;
     top:35%;
+}
+.sunmoon{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:50%;
+    height:40%;
+    border-radius: 25px;
+    left:11.5%;
+    top:176%;
+}
+.lunarinfo{
+    position: absolute;
+    background-color: #CCCCCC;
+    width:25%;
+    height:40%;
+    border-radius: 25px;
+    left:64%;
+    top:176%;
+}
+#lunarAge{
+    position: absolute;
+    left:11%;
+    top:25%;
+    width:fit-content;
+    font-size:18px;
+    color: #333333;
+}
+#lunarAgeval{
+    position: absolute;
+    left:33%;
+    top:25%;
+    font-size:18px;
+    width:fit-content;
+    text-align: left;
+}
+#days{
+    position: absolute;
+    left:70%;
+    top:25%;
+    color:#333333;
+    font-size:18px;
+    width:fit-content;
+    text-align: left;
+}
+
+#lunarAgepercent{
+    position: absolute;
+    left:11%;
+    top:46%;
+    width:fit-content;
+    font-size:18px;
+    color: #333333;
+}
+#lunarpercent{
+    position: absolute;
+    left:37%;
+    top:46%;
+    font-size:18px;
+    width:fit-content;
+    text-align: left;
+}
+#percentage{
+    position: absolute;
+    left:80%;
+    top:46%;
+    color:#333333;
+    font-size:18px;
+    width:fit-content;
+    text-align: left;
+}
+#lunardist{
+    position: absolute;
+    left:11%;
+    top:66%;
+    width:fit-content;
+    font-size:18px;
+    color: #333333;
+}
+#lunardistval{
+    position: absolute;
+    left:41%;
+    top:66%;
+    font-size:18px;
+    width:fit-content;
+    text-align: left;
+}
+#kmdist{
+    position: absolute;
+    left:80%;
+    top:66%;
+    color:#333333;
+    font-size:18px;
+    width:fit-content;
+    text-align: left;
+}
+#suntitle{
+    position: absolute;
+    left:2.5%;
+    top:2%;
+    font-size: 20px;
+    font-family: serif;
+    color:#333333;
 }
 .weather2{
     position: absolute;
@@ -145,7 +272,30 @@ body{
 #search svg{
     fill:white;
 }
-
+#sunpic{
+    position:absolute;
+    background-color: #CCCCCC ;
+    border:none; 
+    left:7%;
+    top:25%;
+}
+#sunpic svg{
+    fill:black;
+}
+#sunrisetime{
+    position:absolute;
+    top:25%;
+    font-size: 20px;
+    left:66%;
+    color:#333333;
+}
+#sunsettime{
+    position:absolute;
+    top:35%;
+    font-size: 20px;
+    left:66%;
+    color:#333333;
+}
 #cityName{
     position: relative;
     top:5px;
@@ -525,4 +675,20 @@ top:48%;
     font-weight:600;
     text-align: center;
     width:5%;
+}
+#moonphase{
+    position:absolute;
+    top:66%;
+    left:66%;
+    font-size:20px;
+    color:#333333;
+    width:fit-content;
+}
+#phasename{
+    position:absolute;
+    top:66%;
+    width:27%;
+    left:74%;
+    text-align: left;
+    font-size:20px;
 }
